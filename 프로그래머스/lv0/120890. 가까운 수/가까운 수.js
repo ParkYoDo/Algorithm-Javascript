@@ -1,4 +1,3 @@
 function solution(array, n) {
-    var value = Math.min(...array.map((a)=>Math.abs(a-n)));
-    return Math.min(...array.filter((a)=>Math.abs(a-n)===value))
+    return array.reduce((acc,cur)=>Math.abs(acc-n)>Math.abs(cur-n)?cur:Math.abs(acc-n)===Math.abs(cur-n)?Math.min(acc,cur):acc)
 }
