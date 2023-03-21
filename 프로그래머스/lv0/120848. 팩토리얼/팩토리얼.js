@@ -1,8 +1,8 @@
 function solution(n) {
-    var result =1;
-    if(n===1) return 1;
-    for(var i =1;result<n;i++){
-        result = result*i;
+    var i = 1;
+    var j = 1;
+    while(i*j<n) {
+        i=i*++j
     }
-    return result>n?i-2:i-1;
+    return j;
 }
