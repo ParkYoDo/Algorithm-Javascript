@@ -1,4 +1,3 @@
 function solution(array) {
-    
-    return array.join('').split(7).length -1;
+    return array.join('').split('').filter((a)=>a==='7').length;
 }
