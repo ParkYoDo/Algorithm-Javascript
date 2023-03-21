@@ -1,4 +1,4 @@
 function solution(array) {
     
-    return array.map((a)=> [...a.toString()].filter((b)=>b==='7').length).reduce((acc,cur)=>acc+cur,0)
+    return array.join('').split(7).length -1;
 }
