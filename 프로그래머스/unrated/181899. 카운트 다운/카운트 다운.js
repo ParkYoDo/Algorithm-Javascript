@@ -1,3 +1,3 @@
 function solution(start, end) {
-    return Array(start-end+1).fill(null).map((a,i)=>start-i);
+    return Array(start-end+1).fill(null).map((_,i)=>start-i);
 }
