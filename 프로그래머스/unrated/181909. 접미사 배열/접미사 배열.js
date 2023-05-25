@@ -5,5 +5,5 @@ function solution(my_string) {
         result.push(my_string.slice(i));
     }
     
-    return result.sort((a,b)=>a>b?1:-1)
+    return result.sort()
 }
