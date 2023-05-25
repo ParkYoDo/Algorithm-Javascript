@@ -1,3 +1,4 @@
 function solution(arr, intervals) {
-    return intervals.map((a,i)=>arr.slice(...a).concat(arr[a[1]])).flat()
+    const [[a,b],[c,d]] = intervals;
+    return arr.slice(a,b+1).concat(arr.slice(c,d+1))
 }
